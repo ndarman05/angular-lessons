@@ -1,0 +1,5 @@
+.user-item {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
