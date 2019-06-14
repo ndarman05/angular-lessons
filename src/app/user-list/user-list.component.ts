@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {ContactsService} from '../../shared/services/contacts.service';
 
 @Component({
   selector: 'app-user-list',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
 
-  items = ['Armanov Arman', 'Ivanov Ivan', 'Antonov Anton'];
+  @Output() outItem = new EventEmitter();
 
-  constructor() { }
+  items = [];
+
+  constructor(private contactService: ContactsService) { }
 
   ngOnInit() {
+    this.items = this.contactService.items;
   }
 
+  outToHeader(event) {
+    console.log(event);
+    this.outItem.emit(event);
+  }
 }

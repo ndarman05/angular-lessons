@@ -1,0 +1,9 @@
+<form #form="ngForm">
+  <div class="field-group">
+    <label for="fullname">Full name:</label>
+    <input id="fullname" type="text" [(ngModel)]="fullname" name="fullname" required minlength="3" placeholder="Enter contact name ... ">
+  </div>
+  <div class="field-group">
+    <button [disabled]="form.invalid" (click)="submit()">Add</button>
+  </div>
+</form>

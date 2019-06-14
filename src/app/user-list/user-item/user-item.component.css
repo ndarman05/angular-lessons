@@ -1,0 +1,18 @@
+.user-item {
+    display: flex;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 15px 0;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    background: #444444;
+    padding: 8px 15px;
+    border: none;
+    color: #dedede;
+}
