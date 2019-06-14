@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  item = '—— User ——';
+
+  getItem(event) {
+    this.item = event;
+  }
 }

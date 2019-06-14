@@ -1,4 +1,4 @@
 <div class="container">
-  <app-header></app-header>
-  <app-user-list></app-user-list>
+  <app-header [item]="item"></app-header>
+  <app-user-list (outItem)="getItem($event)"></app-user-list>
 </div>

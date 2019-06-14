@@ -1,8 +1,10 @@
 .header {
     /*border: 1px solid #000;*/
-    background: #0c72bf;
+    background: #333333;
     color: #ffffff;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     font-family: Verdana, sans-serif;
+    border-radius: 5px;
+    font-size: 12px;
 }
