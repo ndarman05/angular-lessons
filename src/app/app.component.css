@@ -1,0 +1,8 @@
+app-header, app-footer, app-news-list {
+  border: 1px solid #ccc;
+  display: block;
+}
+
+app-header {
+  background: #b92b27;
+}

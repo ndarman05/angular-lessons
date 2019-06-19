@@ -1,0 +1,26 @@
+.title {
+  font-size: 16px;
+  color: #000;
+  font-family: Verdana,Geneva,sans-serif;
+  cursor: pointer;
+}
+
+.title span {
+  color: #696969;
+  letter-spacing: .5px;
+}
+
+.info .author, .info .time {
+  margin-right: 5px;
+  font-weight: bold;
+  display: inline-block;
+  color: #696969;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .5px;
+  font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
+
+.info .author span {
+  color: #b92b27;
+}
