@@ -10,9 +10,7 @@ const routes: Routes = [
   {path : 'ask', component : AskPageComponent},
   {path : 'show', component : ShowPageComponent},
   {path : 'jobs', component : JobsPageComponent},
-  {
-    path: 'item:id', component: NewsDetailComponent
-  }
+  {path: 'news/:id', component: NewsDetailComponent}
 ];
 
 export const routing = RouterModule.forRoot(routes);

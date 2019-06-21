@@ -1,3 +1,4 @@
-<p>
-  news-detail works!
-</p>
+<h3>{{item.title}}</h3>
+<p>{{item.points}} points by {{item.user}}  {{item.time_ago}} | discuss</p>
+
+<p [innerHTML]="item.content"></p>

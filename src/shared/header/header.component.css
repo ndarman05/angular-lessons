@@ -1,24 +1,32 @@
-ul li {
-  float: left;
-  list-style: none;
-  display: inline-block;
+:host {
+  background: #b92b27;
+  display: block;
   padding: 10px;
+}
+
+ul {
+  display: flex;
+  margin: 0 0 0 15px;
+  padding-left: 0;
+  height: 100%;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px 7px;
   cursor: pointer;
   color: hsla(0,0%,100%,.9);
   text-decoration: none;
   margin: 0 5px;
   letter-spacing: 1.8px;
   font-size: 16px;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul li:hover {
   text-decoration: underline;
-}
-
-ul {
-  margin: 0;
-  padding-left: 0;
 }
 
 .logo {
@@ -28,4 +36,8 @@ ul {
 
 .clear {
   clear: both;
+}
+
+.flex-container {
+  display: flex;
 }

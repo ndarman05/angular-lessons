@@ -1,8 +1,8 @@
-app-header, app-footer, app-news-list {
-  border: 1px solid #ccc;
-  display: block;
-}
 
-app-header {
-  background: #b92b27;
+:host {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    background: #f5f5f5;
 }

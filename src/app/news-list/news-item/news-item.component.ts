@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-news-item',
@@ -7,12 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class NewsItemComponent implements OnInit {
 
-  @Input() newsItem = [];
+  @Input() newsItem: any[] = [];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
-    console.log();
+  ngOnInit() {}
+
+  openDetailPage(newsID) {
+    this.router.navigateByUrl('/news/' + newsID);
   }
 
 }
