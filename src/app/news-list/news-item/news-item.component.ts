@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
 })
 export class NewsItemComponent implements OnInit {
 
-  @Input() newsItem: any[] = [];
+  @Input() newsItem: any = [];
 
   constructor(private router: Router) { }
 
