@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NewsService} from '../../shared/services/news.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-news-list',
@@ -9,13 +10,18 @@ import {NewsService} from '../../shared/services/news.service';
 export class NewsListComponent implements OnInit {
 
   news: any = [];
+  section = '/newest';
   params: any = {
     page: 1
   };
 
-  constructor(private newsService: NewsService) {}
+  constructor(
+      private router: Router,
+      private newsService: NewsService
+  ) {}
 
   ngOnInit() {
+    this.section = (this.router.url === '/') ? this.section : this.router.url;
     this.getItems();
   }
 
@@ -33,7 +39,7 @@ export class NewsListComponent implements OnInit {
 
   private getItems() {
     this.newsService
-        .getNews(this.params)
+        .getNews(this.section, this.params)
         .subscribe((res: any) => this.news = res);
   }
 

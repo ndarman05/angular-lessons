@@ -1,6 +1,6 @@
 <div class="title" (click)="openDetailPage(newsItem.id)">
   {{newsItem.title}}
-  <span>({{newsItem.domain}})</span>
+  <span *ngIf="newsItem.domain">({{newsItem.domain}})</span>
 </div>
 <div class="info">
   <div class="author">

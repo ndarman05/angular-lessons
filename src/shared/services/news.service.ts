@@ -8,13 +8,13 @@ import querystring from 'querystring';
 })
 export class NewsService {
 
-  private apiUrl = 'https://node-hnapi.herokuapp.com/newest';
+  private apiUrl = 'https://node-hnapi.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
-  getNews(params = { page: 1 }): Observable<any> {
+  getNews(section, params): Observable<any> {
     params = querystring.stringify(params);
-    return this.http.get(this.apiUrl + '?' + params);
+    return this.http.get(this.apiUrl + section + '?' + params);
   }
 
   getItemById(id: number): Observable<any> {

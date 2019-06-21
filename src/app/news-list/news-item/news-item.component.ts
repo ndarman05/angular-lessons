@@ -15,7 +15,7 @@ export class NewsItemComponent implements OnInit {
   ngOnInit() {}
 
   openDetailPage(newsID) {
-    this.router.navigateByUrl('/news/' + newsID);
+    this.router.navigateByUrl('/item/' + newsID);
   }
 
 }

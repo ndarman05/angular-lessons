@@ -11,9 +11,6 @@ import { NewsItemComponent } from './news-list/news-item/news-item.component';
 import {HttpClientModule} from '@angular/common/http';
 import {NewsService} from '../shared/services/news.service';
 import {routing} from './app.routing';
-import { ShowPageComponent } from './show-page/show-page.component';
-import { AskPageComponent } from './ask-page/ask-page.component';
-import { JobsPageComponent } from './jobs-page/jobs-page.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +19,7 @@ import { JobsPageComponent } from './jobs-page/jobs-page.component';
     FooterComponent,
     NewsListComponent,
     NewsDetailComponent,
-    NewsItemComponent,
-    ShowPageComponent,
-    AskPageComponent,
-    JobsPageComponent
+    NewsItemComponent
   ],
   imports: [
     BrowserModule,

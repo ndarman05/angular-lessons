@@ -1,4 +1,6 @@
 <app-news-item *ngFor="let item of news" [newsItem]="item"></app-news-item>
 
-<button *ngIf="params.page > 1" type="button" (click)="prevPage()">Prev</button>
-<button type="button" (click)="nextPage()">Next</button>
+<div class="pagination">
+    <button class="pag-btn" *ngIf="params.page > 1" type="button" (click)="prevPage()">Prev</button>
+    <button class="pag-btn" type="button" (click)="nextPage()">Next</button>
+</div>
