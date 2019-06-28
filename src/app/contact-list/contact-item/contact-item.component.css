@@ -1,0 +1,16 @@
+.item {
+    border: 1px solid #ccc;
+    padding: 25px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    background-color: #444;
+    color: white;
+    padding: 5px 30px;
+}
