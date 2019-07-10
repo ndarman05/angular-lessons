@@ -1,0 +1,53 @@
+
+.profile {
+    display: grid;
+    grid-template-areas: "header header" "sidebar main";
+    padding: 0 10%;
+}
+
+
+.header{
+    grid-area: header;
+    text-align: center;
+    font-size: 6rem;
+    font-style: normal;
+    margin: 4rem 0 2rem 0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.main {
+    grid-area: main;
+    font-size: 3rem;
+}
+
+img {
+    width: 40px;
+}
+
+@media(max-width: 812px){
+    .profile {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        background-color: var(--bg-color);
+    }
+
+    .header {
+        font-size: 3rem;
+    }
+
+    .sidebar, .main {
+        font-size: 1.5rem;
+    }
+
+    .mobile-nav-list li {
+        background-color: black;
+    }
+
+}

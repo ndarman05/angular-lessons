@@ -1,0 +1,20 @@
+<div class="app">
+
+  <div class="nav">
+    <ul class="nav-list">
+      <li><a routerLink="/projects">Проекты</a></li>
+      <li><a routerLink="/">Автор</a></li>
+    </ul>
+    <div class="mobile-menu" (click)="toggleMenu()"></div>
+    <ul *ngIf="mobileNavList" class="mobile-nav-list">
+        <li><a routerLink="/projects">Проекты</a></li>
+        <li><a routerLink="/">Автор</a></li>
+      </ul>
+      <div class="theme">
+        <input type="checkbox" (change)="toggleTheme($event)" [(ngModel)]="themeValue">
+      </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>

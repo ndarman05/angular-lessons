@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: var(--text-color);
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.mxweight {
+    font-weight: 700;
+}
+
+li {
+    padding-left: 2rem;
+    list-style: none;
+}
+
+.info, li {
+    font-size: 2rem;
 }
